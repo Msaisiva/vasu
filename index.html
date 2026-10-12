@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> PADAVALA VENKATA SAI RAMA DIVYA SRI| Professional Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+/* NAVBAR */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:rgba(17,24,39,0.9);
+    backdrop-filter:blur(10px);
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 10px rgba(0,0,0,0.4);
+}
+
+nav h2{
+    color:#38bdf8;
+    letter-spacing:1px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+    position:relative;
+}
+
+nav ul li a::after{
+    content:"";
+    position:absolute;
+    width:0;
+    height:2px;
+    left:0;
+    bottom:-5px;
+    background:#38bdf8;
+    transition:0.3s;
+}
+
+nav ul li a:hover::after{
+    width:100%;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
+}
+
+/* HERO SECTION */
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:150px 8% 80px;
+    flex-wrap:wrap;
+}
+
+.hero-img img{
+    width:350px;
+
+    border-radius:50%;
+    border:6px solid #38bdf8;
+    transition:0.5s;
+}
+
+.hero-img img:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 25px #38bdf8;
+}
+
+.hero-text{
+    max-width:600px;
+}
+
+.hero-text h1{
+    font-size:40px;
+}
+
+.hero-text span{
+    color:#38bdf8;
+}
+
+.hero-text p{
+    margin:15px 0;
+    color:#cbd5e1;
+}
+
+.btn{
+    padding:10px 25px;
+    background:#38bdf8;
+    color:black;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:white;
+    transform:translateY(-3px);
+    box-shadow:0 5px 15px rgba(56,189,248,0.5);
+}
+
+section{
+    padding:60px 8%;
+    transition:0.4s;
+}
+
+/* Section Highlight on Hover */
+
+section:hover{
+    background:rgba(56,189,248,0.03);
+    border-radius:10px;
+}
+
+.section-title{
+    font-size:28px;
+    color:#38bdf8;
+    margin-bottom:20px;
+    position:relative;
+}
+
+/* Stylish HR Line */
+
+.section-title::after{
+    content:"";
+ 
+    height:2px;
+    background:#b7e806;
+    display:block;
+    margin-top:8px;
+    border-radius:5px;
+}
+
+/* BOX STYLE */
+
+.box{
+    background:rgba(30,41,59,0.8);
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:10px;
+    transition:0.4s;
+    border-left:4px solid #38bdf8;
+}
+
+.box:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.5);
+    background:rgba(30,41,59,1);
+}
+
+/* SKILLS */
+
+.skill{
+    margin-bottom:15px;
+}
+
+.skill-bar{
+    width:100%;
+    background:#334155;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.skill-bar span{
+    display:block;
+    height:10px;
+    background:#38bdf8;
+    width:0;
+    animation:fill 2s forwards;
+}
+
+@keyframes fill{
+    100%{width:var(--level);}
+}
+
+/* CONTACT */
+
+form{
+    max-width:500px;
+    display:flex;
+    flex-direction:column;
+}
+
+form input, form textarea{
+    margin-bottom:15px;
+    padding:12px;
+    border:none;
+    border-radius:5px;
+    outline:none;
+    transition:0.3s;
+}
+
+form input:focus, form textarea:focus{
+    box-shadow:0 0 10px #38bdf8;
+}
+
+form button{
+    padding:10px;
+    background:#38bdf8;
+    border:none;
+    border-radius:5px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+form button:hover{
+    background:white;
+    transform:scale(1.05);
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111827;
+    margin-top:40px;
+    color:#94a3b8;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+    .hero-img{
+        margin-bottom:30px;
+    }
+}
+ul{
+    list-style-type: none;
+    padding-left: 50px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>PADAVALA VENKATA SAI RAMA DIVYA SRI
+</h2>
+    <ul>
+        <li><a href="#objective">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+
+         <li><a href="#Projects">Projects</a></li>
+       
+          <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#skills">Skills</a></li>
+        
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="hero">
+    <div class="hero-img">
+        <img src="DIVYA.jpeg" alt="Profile">
+    </div>
+    <div class="hero-text">
+        <h1 id="typing"></h1>
+        <p>B-TECH Graduate | Python Full Stack Developer | IT Developer</p>
+        <a href="DSP ATS Resume.pdf" class="btn">Download Resume</a>
+    </div>
+</div>
+
+<section id="objective">
+    <h2 class="section-title">Career Objective</h2>
+    <div class="box">
+Seeking an entry-level opportunity to apply my skills in Python, Machine Learning, AI, and Cybersecurity while contributing to organizational growth and continuously enhancing my technical expertise.
+</section>
+<section id="education">
+    <h2 class="section-title">Education</h2>
+
+    <div class="box">
+        <b>B.Tech– Bachelor of Technology</b><br>
+        Bachelor of Technology in Information Technology, Bapatla, Andhra Pradesh<br>
+        CGPA: 7.82 (2023 – 2027)
+    </div>
+
+    <div class="box">
+        <b>MPC</b><br>
+        Sri MedhaVi Junior College, Chirala, Andhra Pradesh<br>
+        CGPA:8.59 (2021 – 2023)
+    </div>
+
+    <div class="box">
+        <b>SSC</b><br>
+       Vidyodaya E.M. High School, Chirala, Andhra Pradesh<br>
+        CGPA:10.00(2019 – 2020)
+    </div>
+
+</section>
+
+<section id="experience">
+    <h2 class="section-title">Experience</h2>
+
+<div class="box">
+    <b>Machine Learning Virtual Intern</b> –SkillDzire Technologies Pvt. Ltd.(May 2025 – Jun 2025)<br><br>
+
+   • Gained hands-on experience in data preprocessing and data cleaning for machine learning projects.<br>
+   • Processed and analyzed datasets using Python, Pandas, NumPy, and Scikit-learn.<br>
+    • Implemented regression and classification models and evaluated their performance using standard metrics.<br>
+     • Worked on real-world datasets to build and validate machine learning models.<br>
+</div>
+
+</section>
+
+
+<section id="Projects">
+    <h2 class="section-title">Projects</h2>
+     <div class="project-card">
+            <h1>House Price Prediction Using Machine Learning</h1>
+            <div class="box">
+              Developed a machine learning model to predict house prices using regression algorithms. May 2025– June 2025 • Performed data preprocessing, feature selection, and model training using Python, Pandas, NumPy, and Scikitlearn. • Evaluated model performance using Mean Squared Error (MSE) and R2 Score. • Improved prediction accuracy through data cleaning and feature engineering.
+            </p>
+
+            <h2>Main Features:</h2>
+<ul>
+    <li> ✔ House Price Prediction Using Machine Learning</li>
+    <li> ✔ Data Preprocessing and Cleaning</li>
+    <li> ✔ Feature Selection and Feature Engineering</li>
+    <li> ✔ Regression Model Training (Linear Regression, Random Forest, etc.)</li>
+    <li> ✔ Model Performance Evaluation (MSE & R² Score)</li>
+    
+</ul>
+
+            <h2>Tools Used:</h2>
+            <p style="padding-left: 50px;"> ✔Python, Pandas,NumPy,Matplotlib</p>
+        </div>
+        </div>
+
+</section>
+
+<section id="certifications">
+    <h2 class="section-title">Certifications</h2>
+
+   <div class="box">
+    • Fundamentals of Information Security– Infosys Springboard (Feb 2026).<br>
+    • Machine Learning Virtual Internship– SkillDzire Technologies Pvt. Ltd. (May–June 2025).
+</div>
+ 
+</section>
+
+<section id="strengths">
+    <h2 class="section-title">Strengths</h2>
+
+    <div class="box">✔ Technical Versatility.</div>
+    <div class="box">✔ Problem-Solving Aptitude</div>
+    <div class="box">✔ Effective Communication</div>
+    <div class="box">✔ Continuous Learning .</div>
+
+    
+
+ 
+
+
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Technical Skills</h2>
+
+    <div class="skill">
+        Python
+        <div class="skill-bar"><span style="--level:90%"></span></div>
+    </div>
+
+    <div class="skill">
+       HTML5 CSS3
+        <div class="skill-bar"><span style="--level:80%"></span></div>
+    </div>
+
+    <div class="skill">
+        Basic of Dsa
+        <div class="skill-bar"><span style="--level:50%"></span></div>
+    </div>
+      <div class="skill">
+        MySql
+        <div class="skill-bar"><span style="--level:90%"></span></div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    © 2026 Divya Sri | All Rights Reserved 
+
+</footer>
+
+<script>
+
+const text = "Hello, I'm PADAVALA VENKATA SAI RAMA DIVYA SRI";
+let i = 0;
+
+function typing(){
+    if(i < text.length){
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typing,100);
+    }
+}
+
+typing();
+
+</script>
+
+</body>
+</html>
